@@ -52,6 +52,8 @@ func (con *Connector) PerformConnector(client *Client) (done bool, err error) {
 				done = true
 				err = resperr
 			}
+		} else {
+			done = true
 		}
 	}
 	return done, err
