@@ -37,8 +37,6 @@ func (con *Connector) PerformConnector(client *Client) (done bool, err error) {
 		reqio := con.reqIORW
 		if reqio == nil {
 			reqio = EmptyIO()
-		} else {
-			fmt.Println(reqio)
 		}
 
 		if req, err := http.NewRequest("POST", con.path, reqio); err == nil {
