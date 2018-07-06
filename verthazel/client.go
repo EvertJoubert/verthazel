@@ -1,7 +1,6 @@
 package verthazel
 
 import (
-	"fmt"
 	"net/http"
 	"strings"
 	"time"
